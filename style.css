@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+    background: linear-gradient(#4e8bd7 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -80,9 +80,9 @@ body::before {
     width: 100%;
     height: 72px;
     border-radius: 16px;
-    background-color: #FFF;
+    background-color: #ffcfcf;
     border: none;
-    color: #1875E8;
+    color: #335074;
     padding: 2rem;
     font-size: 24px;
     font-weight: 700;
