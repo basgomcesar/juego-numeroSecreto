@@ -1,9 +1,9 @@
+asignarTextoElemento('h1',"Adiviana el numero secreto");
+let numeroMaximo = 100;
+asignarTextoElemento('p',`Ingresa un numero entre el 1 y el ${numeroMaximo}`);
 let numeroSecreto = generarNumeroAleatorio();
 let numeroIntentos = 0;
 let listaNumerosSorteados = [];
-let numeroMaximo = 100;
-asignarTextoElemento('h1',"Adiviana el numero secreto");
-asignarTextoElemento('p','Ingresa un numero entre el 1 y el ${numeroMaximo}');
 
 function generarNumeroAleatorio() {
     let numeroAleatorio = Math.floor(Math.random()*numeroMaximo)+ 1;
@@ -23,9 +23,9 @@ function verificarCampo() {
         habilitarBoton('reiniciar');
     }else{
         if(numeroSecreto < numeroDeUsuario){
-            asignarTextoElemento('p',`El numero que ingresaste es mayor al numero secreto, llevas ${numeroIntentos > 1 ?'intentos':'intento' } !!`);
+            asignarTextoElemento('p',`El numero que ingresaste es mayor al numero secreto, llevas ${numeroIntentos} ${numeroIntentos > 1 ?'intentos':'intento' } !!`);
         }else{
-            asignarTextoElemento('p',`El numero que ingresaste es menor al numero secreto, llevas ${numeroIntentos > 1 ?'intentos':'intento' } !!`);
+            asignarTextoElemento('p',`El numero que ingresaste es menor al numero secreto, llevas ${numeroIntentos} ${numeroIntentos > 1 ?'intentos':'intento' } !!`);
         }
         limpiarCampo();
     }
